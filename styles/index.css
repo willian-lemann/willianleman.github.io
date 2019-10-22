@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    min-height: 100%;
+}
+
+.content-container {
+    height: 100vh;
+    display: grid;
+    grid-template-areas: "profile experience" "profile education" "footer footer";
+  gap: 5px;
+}
+
+.profile-container {
+     
+    margin-left: 100px;
+    grid-area: profile;
+    height: 800px;
+    width: 400px;
+    
+    display: flex;
+    justify-content: center;
+    background: url() no-repeat;
+    background-size: cover; 
+    background: green;
+}
+
+.experience-container {
+  
+    grid-area: experience;
+    height: 500px;
+    width: 800px;
+    background: black;
+}
+
+.education-container {
+    
+    grid-area: education;
+    height: 500px;
+    width: 800px;
+    background: blue;
+}
+
+.footer-container {
+    grid-area: footer;
+    height: 200px;
+    width: 100%;
+    background: red;
+}
