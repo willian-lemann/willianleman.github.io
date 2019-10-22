@@ -18,33 +18,40 @@ html, body {
 }
 
 .profile-container {
-     
+    margin: 20px;
     margin-left: 100px;
     grid-area: profile;
     height: 800px;
-    width: 400px;
-    
+    width: 400px; 
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
     background: url() no-repeat;
-    background-size: cover; 
-    background: green;
+    background-size: cover;  
+    box-shadow: 0px 0px 5px 0px;
+}
+.profile-photo{
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    transform: rotate(-90deg);
 }
 
 .experience-container {
-  
+  margin: 20px;
     grid-area: experience;
     height: 500px;
-    width: 800px;
-    background: black;
+    width: 800px; 
+    box-shadow: 0px 0px 5px 0px;
 }
 
 .education-container {
-    
+    margin: 20px;
     grid-area: education;
     height: 500px;
     width: 800px;
-    background: blue;
+    box-shadow: 0px 0px 5px 0px;
 }
 
 .footer-container {
